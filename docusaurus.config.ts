@@ -13,12 +13,12 @@ const config: Config = {
   organizationName: 'facebook',
   projectName: 'aura',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'pt',
-    locales: ['pt'],
+    defaultLocale: 'en',
+    locales: ['pt', 'en'],
   },
 
   presets: [
@@ -59,7 +59,7 @@ const config: Config = {
           position: 'left',
           label: 'Documentação',
         },
-        {to: '/blog', label: 'Quem Somos', position: 'left'},
+        {to: '/blog', label: 'Equipe', position: 'left'},
         {
           href: 'https://github.com/TCC-Aura/docs',
           label: 'GitHub',
