@@ -2,64 +2,50 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
+
+// Tipo que define as propriedades de cada recurso
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
+  description: string;
 };
 
-const FeatureList: FeatureItem[] = [
+// Lista de recursos com suas informações
+const features: FeatureItem[] = [
   {
     title: 'Totem',
-    Svg: require('@site/static/img/totem.svg').default,
-    description: (
-      <>
-        Totem de Pré-triagem de Acesso aos recusos do ambuatorio.
-      </>
-    ),
+    description: 'Totem de Pré-triagem de Acesso aos recursos do ambulatório.',
   },
   {
     title: 'Sistema Interno',
-    Svg: require('@site/static/img/sistema.svg').default,
-    description: (
-      <>
-        Sistema Interno para acompanhamento dos pacientes e gerenciamento interno.
-      </>
-    ),
+    description: 'Sistema Interno para acompanhamento dos pacientes e gerenciamento interno.',
   },
   {
     title: 'Visor',
-    Svg: require('@site/static/img/visor.svg').default,
-    description: (
-      <>
-        
-        Visor para exibição de senhas.
-      </>
-    ),
+    description: 'Visor para exibição de senhas.',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+// Componente que renderiza um único recurso
+function Feature({ title, description }: FeatureItem) {
+ // Adicione este log para depuração
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        <Heading as="h3" style={ { color: '#087cbc'}}>{title}</Heading>
         <p>{description}</p>
       </div>
     </div>
   );
 }
 
+// Componente principal que renderiza a lista de recursos
 export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {features.map((feature, index) => (
+            <Feature key={index} {...feature} />
           ))}
         </div>
       </div>
