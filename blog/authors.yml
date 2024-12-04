@@ -1,6 +1,6 @@
 duda:
   name: Maria Eduarda Catalão
-  title: Front-End Developer 
+  title: Full-Stack Developer 
   url: https://github.com/dudacatalao
   image_url: /img/authors/duda.jpg
   page: true
@@ -18,7 +18,7 @@ ju:
 
 isa:
   name: Isabelli Marques
-  title: Back-End Developer 
+  title: Full-Stack Developer 
   url: https://github.com/isabellimrqs
   image_url: /img/authors/isa.png
   page: true
@@ -27,7 +27,7 @@ isa:
 
 layra:
   name: Layra Fernandes
-  title: Back-End Developer 
+  title: Full-Stack Developer 
   url: https://github.com/layrasfc
   image_url: /img/authors/layra.jpg
   page: true
@@ -45,7 +45,7 @@ emanu:
 
 malu:
   name: Maria Luiza Ramos
-  title: Back-End Developer 
+  title: Full-Stack Developer 
   url: https://github.com/mluizaramos
   image_url: /img/authors/malu.jpg
   page: true
