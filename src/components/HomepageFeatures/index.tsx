@@ -1,43 +1,68 @@
 import clsx from 'clsx';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import styles from './index.module.css';
-import TotemFeatures from '../components/TotemFeature';
-import SystemFeature from '../components/SystemFeature';
-import DisplayFeature from '../components/DisplayFeature';
-import ToolsFeature from '../components/ToolsFeature';
+import Heading from '@theme/Heading';
+import styles from './styles.module.css';
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+type FeatureItem = {
+  title: string;
+  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  description: JSX.Element;
+};
+
+const FeatureList: FeatureItem[] = [
+  {
+    title: 'Totem',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    description: (
+      <>
+        Totem de Pré-triagem de Acesso aos recusos do ambuatorio.
+      </>
+    ),
+  },
+  {
+    title: 'Sistema Interno',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    description: (
+      <>
+        Sistema Interno para acompanhamento dos pacientes e gerenciamento interno.
+      </>
+    ),
+  },
+  {
+    title: 'Visor',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        
+        Visor para exibição de senhas.
+      </>
+    ),
+  },
+];
+
+function Feature({title, Svg, description}: FeatureItem) {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className={clsx('container', styles.container)}>
-        <div className={styles.wrapper}>
-          <img src="/img/logo-aura-dark.svg" alt="" />
-          <div className={styles.staticTxt}>AURA é</div>
-          <ul className={styles.dynamicTxts}>
-            <li><span>tecnologia</span></li>
-            <li><span>otimização</span></li>
-            <li><span>agilidade</span></li>
-            <li><span>inovação!</span></li>
-          </ul>
-        </div>
+    <div className={clsx('col col--4')}>
+      <div className="text--center">
+        <Svg className={styles.featureSvg} role="img" />
       </div>
-    </header>
+      <div className="text--center padding-horiz--md">
+        <Heading as="h3">{title}</Heading>
+        <p>{description}</p>
+      </div>
+    </div>
   );
 }
 
-export default function Home(): JSX.Element {
+export default function HomepageFeatures(): JSX.Element {
   return (
-    <Layout
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <TotemFeatures />
-        <SystemFeature />
-        <DisplayFeature />
-        <ToolsFeature />
-      </main>
-    </Layout>
+    <section className={styles.features}>
+      <div className="container">
+        <div className="row">
+          {FeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
