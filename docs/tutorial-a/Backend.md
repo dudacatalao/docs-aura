@@ -4,32 +4,31 @@ sidebar_position: 2
 
 # Back-End
 
-## Stack Tecnológica
+## Stack Tecnologias
 
-### Linguagem
-Python (versão X.X) – Usada devido à sua simplicidade, vasto ecossistema de bibliotecas e integração facilitada com ferramentas de inteligência artificial e aprendizado de máquina, o que pode ser explorado no futuro.
+### Linguagem de programação
+**Python (versão 3.12)** – Usada devido à sua simplicidade, vasto ecossistema de bibliotecas e integração facilitada com ferramentas de inteligência artificial e aprendizado de máquina, o que pode ser explorado no futuro.
 
 ### Framework
-Django (versão X.X) – Escolhido por ser um framework robusto para desenvolvimento rápido de backends, com boas práticas incorporadas, como a arquitetura Model-View-Template (MVT).
+**Django (versão 4.2)** – Escolhido por ser um framework robusto para desenvolvimento rápido de backends, com boas práticas incorporadas, como a arquitetura Model-View-Template (MVT).
 
 
-### Django Rest Framework (DRF) 
+#### Django Rest Framework (DRF) 
 Utilizado para a criação de APIs RESTful, fornecendo uma camada de abstração para serialização de dados, autenticação e autorização.
 
 ### Banco de Dados
-PostgreSQL – Escolhido pela sua confiabilidade, suporte a dados complexos e capacidade de lidar com uma quantidade maior de transações e dados relacionais de forma eficiente.
-WebSocket:
- 
-### Django Channels 
-Adotado para garantir a atualização em tempo real, especialmente para a sincronização entre o sistema de senhas (Totem) e a exibição na TV.
+**PostgreSQL** – Escolhido pela sua confiabilidade, suporte a dados complexos e capacidade de lidar com uma quantidade maior de transações e dados relacionais de forma eficiente.
 
-### Serviços em Nuvem 
-Azure – Utilizado para autenticação via Single Sign-On (SSO) com Active Directory, garantindo um login seguro e integrado para os funcionários do ambulatório.
+### WebSocket
+**Django Channels** - Adotado para garantir a atualização em tempo real, especialmente para a sincronização entre o sistema de senhas (Totem) e a exibição na TV.
 
-Thunder client
 
-Api Dog
+### Outras ferramentas 
+**Thunder Client** - Adotado para realizar e testar requisições de APIs RESTful durante o desenvolvimento, permitindo verificar o funcionamento dos endpoints e facilitar a depuração e análise de respostas de APIs.
 
+**Api Dog** - Utilizado para testar tanto requisições de API quanto de WebSocket, garantindo a comunicação em tempo real entre as partes do sistema.
+
+**Power Automate** - Utilizado para o envio automático de e-mails na ativação da conta no primeiro login externo.
 
 ## Arquitetura do Sistema
 
@@ -50,7 +49,7 @@ O uso do WebSocket (Django Channels) permite a comunicação bidirecional em tem
 O sistema foi containerizado com Docker para garantir que o ambiente de desenvolvimento e produção sejam consistentes, facilitando o deploy e a escalabilidade.
 
 
-IMAGEM da arquitetura
+<!-- IMAGEM da arquitetura -->
 
 
 ## Desempenho e Escalabilidade

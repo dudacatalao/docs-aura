@@ -19,8 +19,13 @@ O Sistema central gerencia tanto os pacientes quanto os usuários, possibilitand
 ### Artigos Técnicos
 
 ### Aura
+É um sistema integrado composto por três elementos principais:  
 
- É um sistema unificado com 3 elementos, um totem de autoatendimento para retirada de senhas de acordo com o serviço solicitado, um visor para visualização de senhas chamadas e um sistema interno para o gerenciamento dos pacientes do fluxo de atendimentos e um relatório com painéis dos históricos de atendimentos para análise de dados.
+1. **Totem de autoatendimento**: permite que os pacientes retirem senhas de forma prática, conforme o serviço desejado.  
+2. **Visor de chamadas**: exibe as senhas em tempo real para organizar o fluxo de atendimento.  
+3. **Sistema interno**: gerencia o fluxo de pacientes, facilitando o controle e otimizando o atendimento. Ele também gera relatórios detalhados, com painéis analíticos, permitindo uma análise completa do histórico de atendimentos.  
+
+O Aura é uma solução completa para modernizar e simplificar o gerenciamento de atendimentos.
 
 
 ## Descrição de Requisitos
@@ -28,88 +33,131 @@ O Sistema central gerencia tanto os pacientes quanto os usuários, possibilitand
 ### Requisitos Funcionais
 
 #### 1. Funcionalidades do Totem
-O totem físico será responsável por gerar senhas e fornecer um atendimento acessível aos pacientes. As funcionalidades do totem incluem:
-Interface de Retirada de Senhas:      
-O paciente       poderá escolher o tipo de atendimento (e.g., Enfermagem, Medicina).
-Geração Automática de Senhas:      
-As       senhas serão geradas com uma formatação específica, de acordo com o       serviço escolhido (e.g., EN-001 para Enfermagem).
-Impressão de Senha Física:      
-Impressão       imediata da senha após sua geração.
-Atendimento Emergencial Prioritário:      
-Se       for uma emergência, o sistema direcionará automaticamente o paciente para       o atendimento emergencial sem a necessidade de senha regular.
-Tradução Automática: 
-Tradução       da interface para inglês e espanhol.
-Tradução em Libras (Acessibilidade):      
-Suporte       à tradução em Libras (Língua Brasileira de Sinais) para garantir       acessibilidade a pacientes com deficiência auditiva.
+O **totem físico** será um elemento essencial para tornar o atendimento mais acessível e eficiente. Ele contará com as seguintes funcionalidades:  
+
+1. **Interface de Retirada de Senhas**  
+   - Permite que o paciente selecione o tipo de atendimento desejado (e.g., Enfermagem, Medicina).  
+
+2. **Geração Automática de Senhas**  
+   - As senhas serão criadas com uma formatação específica, conforme o serviço escolhido (e.g., *EN-001* para Enfermagem).  
+
+3. **Impressão de Senha Física**  
+   - Após a geração da senha, ela será impressa de forma imediata para o paciente.  
+
+4. **Atendimento Emergencial Prioritário**  
+   - Em casos de emergência, o sistema direcionará automaticamente o paciente para o atendimento prioritário, eliminando a necessidade de retirar uma senha regular.  
+
+5. **Tradução Automática**  
+   - A interface será traduzida automaticamente para inglês e espanhol, facilitando o atendimento a pacientes estrangeiros.  
+
+6. **Tradução em Libras (Acessibilidade)**  
+   - Suporte à tradução em Libras (Língua Brasileira de Sinais), garantindo acessibilidade plena a pacientes com deficiência auditiva.  
+
+Essas funcionalidades fazem do totem um componente inclusivo e eficaz no gerenciamento do fluxo de atendimentos.
 #### 2. Funcionalidades do Visor
-O visor é responsável por exibir o status das senhas e informar aos pacientes sobre seu atendimento. As funcionalidades incluem:
-Exibição de Senha e Localização:      
-Exibição       da senha chamada com o número e iniciais do serviço, juntamente com a       porta onde o paciente deve se dirigir.
-Histórico de Senhas Atualizado em Tempo      Real: 
-A       lista de senhas será atualizada dinamicamente após o atendimento de outra       senha.
-Narração da Senha: 
-O       sistema narrará automaticamente a senha e o local de atendimento quando a       senha for chamada.
+O **visor** é projetado para exibir informações claras e em tempo real, auxiliando os pacientes durante o atendimento. Suas principais funcionalidades são:  
+
+1. **Exibição de Senha e Localização**  
+   - Mostra a senha chamada, incluindo o número e as iniciais do serviço (e.g., *EN-001*), junto com a indicação da porta ou local onde o paciente deve se dirigir.  
+
+2. **Histórico de Senhas Atualizado em Tempo Real**  
+   - Atualiza dinamicamente a lista de senhas à medida que novos atendimentos são realizados, garantindo que as informações exibidas estejam sempre corretas.  
+
+3. **Narração da Senha**  
+   - O sistema realiza uma narração automática da senha e do local de atendimento quando a chamada é feita, oferecendo maior acessibilidade e compreensão.  
+
+Essas funcionalidades tornam o visor essencial para garantir um atendimento eficiente, organizado e acessível a todos.
 #### 3. Funcionalidades do Sistema
 #### 3.1. Gerenciamento de Pacientes
-As funcionalidades relacionadas ao gerenciamento de pacientes incluem:
-Visualização em Tempo Real:      
-O       sistema exibirá, em tempo real, as senhas geradas pelo totem.
-Atendimento de Senhas: 
-O sistema       permitirá que o usuário atenda as senhas recebidas do totem em tempo       real.
-Visualização de Informações do Atendimento:      
-Visualização       em tempo real dos detalhes da senha atendida, incluindo serviço e       paciente.
-Encaminhamento de Atendimento:      
-Possibilidade       de encaminhar um paciente para outra especialidade, caso necessário.
-Finalização de Atendimento:      
-Método       para finalizar um atendimento e removê-lo da lista de espera.
-Adição de Pacientes Online:      
-Cadastro       de novos pacientes via formulário online, incluindo campos como nome,       data e serviço.
-Acompanhamento de Status de Paciente:      
-Monitoramento       em tempo real do status de cada paciente, restrito à recepção.
+O sistema oferece ferramentas avançadas para gerenciar o fluxo de atendimentos com eficiência. Suas funcionalidades incluem:  
+
+1. **Visualização em Tempo Real**  
+   - Exibição instantânea das senhas geradas pelo totem, permitindo acompanhar o fluxo de atendimentos conforme ele ocorre.  
+
+2. **Atendimento de Senhas**  
+   - Permite que os atendentes chamem e atendam as senhas geradas pelo totem em tempo real.  
+
+3. **Visualização de Informações do Atendimento**  
+   - Apresenta os detalhes da senha atendida, como o serviço solicitado e informações do paciente, durante o atendimento.  
+
+4. **Encaminhamento de Atendimento**  
+   - Oferece a opção de encaminhar o paciente para outra especialidade ou setor, caso necessário.  
+
+5. **Finalização de Atendimento**  
+   - Inclui um método prático para encerrar o atendimento e remover o paciente da lista de espera.  
+
+6. **Adição de Pacientes Online**  
+   - Permite o cadastro de novos pacientes por meio de um formulário online, incluindo informações como nome, data e serviço desejado.  
+
+7. **Acompanhamento de Status de Paciente**  
+   - Monitoramento em tempo real do status de cada paciente, com acesso restrito à equipe de recepção para maior organização.  
+
+Essas funcionalidades garantem um gerenciamento otimizado, proporcionando uma experiência mais organizada e ágil tanto para os pacientes quanto para a equipe.
 #### 3.2. Gerenciamento de Usuários
-Funcionalidades relacionadas ao gerenciamento de usuários do sistema:
-Visualização de Lista de Usuários:      
-Exibição       de uma lista completa de usuários cadastrados no sistema.
-Edição e Deleção de Usuários:      
-Administradores       poderão editar ou deletar usuários.
-Cadastro de Usuários por E-mail:      
-Administradores       poderão registrar novos usuários, enviando um e-mail com um código de       verificação para o primeiro login.
-Primeiro Login para Usuários Internos:      
-Durante       o primeiro login, os usuários internos deverão completar seus dados       (e.g., nome, sobrenome, especialidade).
-Login via Azure SSO (Usuários Internos):      
-Usuários       internos poderão acessar o sistema utilizando login via Azure Single       Sign-On (SSO).
-Primeiro Login para Usuários Externos:      
-Usuários       externos também devem completar seus dados no primeiro login (e.g., nome,       sobrenome, especialidade).
-Login por EDV e Senha (Usuários Externos):      
-Usuários       externos poderão acessar o sistema utilizando EDV e senha.
-Escolha de Sala no Login: 
-O       login será completo apenas após a escolha de uma sala de atendimento.
-Visualização e Gerenciamento de Salas:      
-Visualização       de salas disponíveis. Administradores poderão adicionar e deletar salas.      
-Página de Suporte:
-·       Página com os contatos dos desenvolvedores do projeto, disponível para todos os usuários.
+O sistema oferece funcionalidades avançadas para gerenciar usuários de maneira eficaz e segura. As principais funcionalidades incluem:  
+
+1. **Visualização de Lista de Usuários**  
+   - Exibição completa de todos os usuários cadastrados no sistema, permitindo fácil acesso às informações.  
+
+2. **Edição e Deleção de Usuários**  
+   - Administradores têm a capacidade de editar ou excluir usuários conforme necessário, garantindo controle total sobre o sistema.  
+
+3. **Cadastro de Usuários por E-mail**  
+   - Administradores podem cadastrar novos usuários, enviando um e-mail com um código de verificação para o primeiro login.  
+
+4. **Primeiro Login para Usuários Internos**  
+   - Durante o primeiro login, os usuários internos devem completar seus dados (e.g., nome, sobrenome, especialidade).  
+
+5. **Login via Azure SSO (Usuários Internos)**  
+   - Usuários internos podem acessar o sistema utilizando login via Azure Single Sign-On (SSO), garantindo maior segurança e praticidade.  
+
+6. **Primeiro Login para Usuários Externos**  
+   - Usuários externos também devem completar seus dados no primeiro login (e.g., nome, sobrenome, especialidade).  
+
+7. **Login por EDV e Senha (Usuários Externos)**  
+   - Usuários externos podem acessar o sistema utilizando seu EDV (Número de Identificação) e senha.  
+
+8. **Escolha de Sala no Login**  
+   - O login será concluído apenas após a escolha de uma sala de atendimento, organizando o fluxo de trabalho.  
+
+9. **Visualização e Gerenciamento de Salas**  
+   - Administradores podem visualizar salas disponíveis e adicionar ou deletar salas conforme a necessidade.  
+
+10. **Página de Suporte**  
+    - Uma página com os contatos dos desenvolvedores do projeto estará disponível para todos os usuários, garantindo suporte técnico sempre que necessário.  
+
+Essas funcionalidades proporcionam um gerenciamento completo de usuários, com foco na segurança, praticidade e controle, garantindo um ambiente funcional e organizado.
 #### 4. Dashboards
-O sistema incluirá dashboards interativos para o monitoramento e análise de dados relacionados ao atendimento:
-Dashboard Interativo: 
-Visualização       do fluxo diário de pacientes e controle dos tipos de atendimentos e       serviços.
-Integração com MetaBase: 
-Todos       os dashboards serão integrados ao sistema utilizando a ferramenta       MetaBase.
-Tipos de Dashboards Disponíveis:      
-Total       de senhas retiradas no totem por data.
-Total       de senhas por serviço.
-Total       de atendimentos por usuário.
-Tempo       de atendimento por usuário.
-Média       de tempo total do paciente no ambulatório.
-Média       de tempo de espera do paciente na recepção até o atendimento.
+O sistema incluirá dashboards interativos para facilitar o monitoramento e análise de dados relacionados ao atendimento. As principais funcionalidades incluem:  
+
+1. **Dashboard Interativo**  
+   - Exibição visual do fluxo diário de pacientes, com controle detalhado sobre os tipos de atendimentos e serviços prestados.  
+
+2. **Integração com MetaBase**  
+   - Todos os dashboards serão integrados ao sistema por meio da ferramenta MetaBase, proporcionando uma visualização dinâmica e interativa dos dados.  
+
+3. **Tipos de Dashboards Disponíveis**  
+   - **Total de senhas retiradas no totem por data**: Monitoramento diário das senhas retiradas, permitindo análise do volume de atendimento por período.  
+   - **Total de senhas por serviço**: Exibição das quantidades de senhas retiradas por tipo de serviço, ajudando a identificar a demanda em cada área.  
+   - **Total de atendimentos por usuário**: Análise da quantidade de atendimentos realizados por cada usuário, possibilitando o acompanhamento do desempenho individual.  
+   - **Tempo de atendimento por usuário**: Visualização do tempo médio gasto por cada usuário em cada atendimento, permitindo otimizações no fluxo de trabalho.  
+   - **Média de tempo total do paciente no ambulatório**: Cálculo do tempo médio que um paciente passa desde a entrada até o final do atendimento, auxiliando na avaliação da eficiência do processo.  
+   - **Média de tempo de espera do paciente na recepção até o atendimento**: Exibição do tempo médio de espera dos pacientes, permitindo ajustes na gestão de filas e agendamentos.  
+
+Esses dashboards interativos oferecem dados valiosos para a gestão e otimização dos processos de atendimento, melhorando a eficiência e a experiência tanto para os pacientes quanto para a equipe.
 #### 5. Controle de Acesso
-O sistema deve implementar controle de acesso por usuário, com login através de nome de usuário único e senha segura. Serão definidos dois níveis de acesso:
-Administrador: 
-Acesso completo ao sistema.
-Permissão para cadastrar, editar e remover usuários.
-Adicionar e remover salas.
-Habilitar e desabilitar serviços no totem físico.
-Usuário: 
-Acesso limitado, de acordo com as permissões atribuídas a seu  papel no sistema.
+O sistema implementará um controle de acesso rigoroso, garantindo que cada usuário tenha permissões específicas conforme seu papel. Os dois níveis de acesso definidos são:
+
+1. **Administrador**  
+   - **Acesso Completo ao Sistema**: Permissão para gerenciar todos os aspectos do sistema, sem restrições.  
+   - **Cadastro, Edição e Remoção de Usuários**: Capacidade de adicionar, editar ou excluir usuários do sistema.  
+   - **Gerenciamento de Salas**: Administradores podem adicionar ou remover salas de atendimento conforme a necessidade.  
+   - **Gerenciamento de Serviços no Totem Físico**: Permissão para habilitar ou desabilitar serviços disponíveis no totem de autoatendimento, ajustando as opções conforme a demanda.  
+
+2. **Usuário**  
+   - **Acesso Limitado**: Usuários terão acesso restrito, de acordo com as permissões atribuídas pelo administrador. Isso pode incluir a visualização de informações específicas ou a execução de tarefas específicas, mas sem a capacidade de modificar configurações do sistema.  
+
+O login será realizado através de **nome de usuário único e senha segura**, garantindo que cada acesso seja controlado e seguro, de acordo com o nível de permissão atribuído a cada usuário.
 
 
 ### Requisitos Não Funcionais

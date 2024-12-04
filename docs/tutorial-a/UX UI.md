@@ -27,20 +27,19 @@ O logotipo do sistema foi projetado para refletir a natureza profissional e de s
 
 
 ### Paleta de cores
-Cor Primaria
-Azul (#007BFF) – Transmite confiança e profissionalismo. Utilizada nos botões principais e nas áreas de destaque.
+**Cor Primaria**
+- Azul (#007BFF) – Transmite confiança e profissionalismo. Utilizada nos botões principais e nas áreas de destaque.
 
-Cor Secundaria
-Verde (#28A745) – Associada à saúde e bem-estar, utilizada nos botões de confirmação, como o de "Atender".
+**Cor Secundária**
+- Verde (#28A745) – Associada à saúde e bem-estar, utilizada nos botões de confirmação, como o de "Atender".
 
-Neutros
-Cinza claro (#F8F9FA) para fundos e branco (#FFFFFF) para textos e caixas, oferecendo contraste suficiente sem sobrecarregar a interface.
+**Neutros**
+- Cinza claro (#F8F9FA) para fundos e branco (#FFFFFF) para textos e caixas, oferecendo contraste suficiente sem sobrecarregar a interface.
 
-Alerta 
-Vermelho (#DC3545) – Usada para mensagens de erro ou alertas, como no caso de falha no sistema.
+**Alerta**
+- Vermelho (#DC3545) – Usada para mensagens de erro ou alertas, como no caso de falha no sistema.
 
-(imagens das cores)
-
+![Cores](./coresAura.png)
 ## Layout
 ### Resposividade 
 O design foi pensado para ser adaptado tanto para telas grandes (computadores e TVs) quanto pequenas (totens e notebooks). Componentes se reorganizam sem perder funcionalidade.
@@ -66,7 +65,7 @@ Mensagens de sucesso em azul, com ícones de check, aparecendo na tela.
 ### Modais
 Usados para confirmar ações importantes, como a exclusão de um registro. A cor primária é utilizada para o botão de ação no modal, e cores secundárias para "Cancelar".
 
-## Fluxo de navageção
+## Fluxo de navegação
 ### Totem 
 Tela inicial simples, com apenas duas opções: "Retirar Senha" e "Ver Senhas". Após retirar a senha, o usuário recebe um feedback visual com o número da senha gerada.
 
@@ -83,6 +82,6 @@ Durante o processo de desenvolvimento, foram criados protótipos utilizando ferr
 Tamanho de Fonte: Usamos tamanhos de fonte grandes e fáceis de ler, especialmente nas telas do totem e da TV.
 Libras: Usamos tradutor para Libras 
 
-## Wireframes e Mockups
-(Fotos das telas)
+<!-- ## Wireframes e Mockups
+(Fotos das telas) -->
 
