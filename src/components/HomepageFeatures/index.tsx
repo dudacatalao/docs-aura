@@ -14,7 +14,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Totem de Pré-triagem de Acesso aos recusos do ambuatorio!!
+        Totem de Pré-triagem de Acesso aos recusos do ambuatorio.
       </>
     ),
   },
@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Sistema Interno para acompanhamento e melhor gestão de atendimentos do ambulatorio!!
+        Sistema Interno para acompanhamento dos pacientes e gerenciamento interno.
       </>
     ),
   },
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         
-        Visor para exibição de senhas!!
+        Visor para exibição de senhas.
       </>
     ),
   },
