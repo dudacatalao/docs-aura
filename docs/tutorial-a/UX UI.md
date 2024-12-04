@@ -41,7 +41,7 @@ O logotipo do sistema foi projetado para refletir a natureza profissional e de s
 
 ![Cores](./coresAura.png)
 ## Layout
-### Resposividade 
+### Responsividade 
 O design foi pensado para ser adaptado tanto para telas grandes (computadores e TVs) quanto pequenas (totens e notebooks). Componentes se reorganizam sem perder funcionalidade.
 
 ### Espaçamento
